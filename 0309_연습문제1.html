@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--강사님-->
+    <!--inline-block :  지정해주는 만큼만 잡아줌-->
+    <style>
+        label{
+            width: 60px;
+            display: inline-block;
+            background-color: beige;
+        }
+        div {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!--0308 연습문제-->
+    <!-- 내가 한 것-->
+<h1>예약정보</h1>
+<p>
+<label for="name">이 름</label>
+<input type="text" id="name">
+</p>
+<p>
+    <label for="phonenumber">휴대폰</label>
+    <input type="tel" id="phonenumber">
+</p>
+<p>
+    <label for="email">이메일</label>
+    <input type="text" id="email">
+</p>
+<button type="종류">예약하기</button>
+<br><br><br><br><br>
+
+<h1>예약정보</h1>
+<form action="">
+    <div>
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="phone">휴대폰</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    <div>
+        <label for="mail">메일</label>
+        <input type="email" id="mail" name="mail">
+    </div>
+    <input type="submit" value="예약하기">
+</form>
+
+
+</body>
+</html>

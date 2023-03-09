@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <input type="text" name="username" placeholder ="이름">
+    <input type="password", name="password" placeholder="비밀번호">
+    <br>
+    <input type="checkbox" name = "check">
+    <br>
+    <input type="radio" name="radio">
+    <input type="submit" value="제출">
+    <input type="reset" value="초기화">
+    <button type="button">버튼</button>
+    <input type="hidden" name="hidden_input">
+    <input type="date" name="date_input">
+    <input type="time" name="time_input">
+    <input type="datetime" name="datetime_input">
+    <input type="email" name="email_input">
+    <input type="file" name="file_input">
+    <input type="image" src="image.jpg">
+    <input type="month" name="month_input">
+    <input type="number" name="number_input">
+    <input type="range" name="range_input">
+    <input type="search" name="search_input">
+    <input type="tel" name="tel_input">
+    <input type="url" name="url_input">
+    <input type="week" name="week_input">
+    <input type="color" name="color_input">
+<br><br>
+    <form action="">
+        <!-- label : from 내에서 상호작용 요소에 이름을 붙일 때 사용 -->
+        <!-- name : 서버에서 지정된 이름으로 입력 요소를 식별 할 수 있음 -->
+        <label for="male">남성</label>
+        <!--checked 는 default설정-->
+        <input type="radio" name="gender" id="male" checked>
+        <label for="female">여성</label>
+        <input type="radio" name="gender" id="female">
+<br><br><br>
+        <!--fieldset 태그로 그룸을 만들면 박스모양의 테두리가 생김-->
+        <fieldset>
+            <legend>기본 정보</legend>
+            <p>
+                <label for="userid">아이디</label>
+                <input type="text" id="userid">
+            </p>
+            <p>
+                <label for="password">비밀번호</label>
+                <input type="text" id="password">
+            </p>
+        </fieldset>
+        <br><br>
+        <style>
+            .id {
+                margin-bottom: 10px;
+             }
+            .pwd {
+                margin-bottom: 4px;
+             }
+
+             div {
+                margin-bottom: 10px;
+             }
+        </style>
+
+    <p>p대신에 div를 썼습니다~~~ style을 넣었습니다~~</p>
+        <fieldset>
+            <legend>기본 정보</legend>
+            <div class="id">
+                <label for="userid">아이디</label>
+                <input type="text" id="userid">
+            </div>
+            <div class="pwd">
+                <label for="password">비밀번호</label>
+                <input type="text" id="password">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>선택 정보</legend>
+            <div>
+                <label for="age">나이</label>
+                <input type="number" id="age">
+            </div>
+            <div>
+                <label for="recommender">추천</label>
+                <input type="text" id="recommender">
+            </div>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>블로그 글쓰기</fieldset>
+        <div>
+            <label for="title">제목</label>
+            <input type="text" id="title">
+        </div>
+        <div>
+            <label for="desc"></label>
+            <!--글쓰기가안되고 읽기만가능 = readonly-->
+            <textarea name="" id="desc" cols="80" rows="10" readonly></textarea>
+        </div>
+    </form>
+</body>
+</html>
