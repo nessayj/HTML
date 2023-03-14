@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>위치 속성으로 HTML 요소 배치하기</title>
+    <style>
+        body {
+            margin: 0;
+            height: 4000px;
+            position: relative;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .red-box {
+            background-color: red;
+        }
+        .green-box{
+            background-color: green;
+            /* position: absolute;  */
+            /* absolute : 중간에 뭐가 끼어있든 상관없음; 부모의 위치에서 절대적인 위치로 이동; 단 부모는 static이 아니어야 함 */
+            /* position: fixed; */
+            /* fixed : 뷰포트(화면에 보여주는 위치) 기준으로 고정된 위치; 스크롤의영향을 받지않음 */
+            position: sticky;
+            /* sticky : 스크롤 발생할때 자기자리를 차지하고 움직이다가 top의 값에서 고정 */
+            left: 100px;
+            top: 10px;
+        }
+        .blue-box {
+            /* 포지션을 지정해주지 않았기 때문에 형제인 redbox기준으로 움직임 */
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+    
+</body>
+</html>
