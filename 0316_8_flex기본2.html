@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--특정항목 정렬 다시 노션보고 공부-->
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            width: 300px;
+            height: 200px;
+            /* flex-wrap: nowrap;*/ 
+            /* nowrap : nowrap이 기본값; 아이템을 수평으로 줄이면서라도 부모안으로 들어가려고 함; 더이상 줄일 수 없을 때(안에있는 콘텐츠가 보일 수 있는 최소사이즈까지)는 넘침 */
+            /* flex-wrap: wrap;  */
+            /* wrap : 아이템을 밑을 떨어뜨려서 부모안으로 들어가려고 함 */
+            /* wrapreverse : 반대로, 아래로 떨어뜨림*/
+            background-color: bisque;
+            border: 1px solid black;
+            display: flex; /* 수평으로 유연하게 들어가는 성질 */
+            /* flex-direction: row; */
+            flex-flow: row wrap; /* 수평 정렬 */
+            /* 컨텐츠(여러개의 아이템일 경우)를 중앙정렬하려면 아래 처럼 해야 함 */
+            justify-content: space-evenly; /* 주축 방향으로 정렬 */
+            align-content: space-evenly; /* 교차축 방향으로 정렬 */    
+        }
+        .flex-item {
+            width: 80px;
+            /* height: 50px; 높이를 넣어주지 않으면 기본 div에 설정한 높이만큼 채워짐 */
+            height: 80px;
+            text-align: center;
+            border: 1px solid darkblue;
+            color: white;
+            background-color: orange;
+            /* 박스안에 글자를 중앙정렬하려면 아래와 같이 해야함 */
+            display: flex;
+            justify-content: center; /*주축 */
+            align-items: center; /* 교차 축 */
+        }
+        .flex-item:nth-child(2n) {
+            background-color: orangered;
+        }
+        .flex-item:nth-child(1n) {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
