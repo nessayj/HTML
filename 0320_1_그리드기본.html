@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그리드 레이아웃</title>
+    <style>
+        .grid-container {
+            margin: 20px;
+            display: grid;
+            height: 100vh; /* 아래 row에서 auto를 하기 위해서는 높이값을 같이 지정을 해줘야 함*/
+            /* grid-template-columns: 2fr 1fr 1fr; /*화면의 배율지정*/
+            /* grid-template-columns: repeat(3, 1fr); /* 같은크기의 template이 3개; 1fr은 갯수에 상관없이 무족건 1:1로 크기가 정해짐 */
+            /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* auto-fit & auto-fill : 자동으로 남는 여백을 채워줌; 최소크기는 200px임.; auto-fill은 여백이 생긴*/
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-columns: repeat(3, minmax(50px, 200px));
+            grid-template-rows: repeat(2, minmax(10px, 500px));
+            /* grid-template-rows: 100px 100px; */
+            row-gap: 10px;
+            column-gap: 10px;
+            justify-items: start;
+            align-items: stretch; /* height가 움직임 */
+        }
+        .grid-item {
+            color: white;
+            background-color: royalblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .grid-item:nth-child(2n) {
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">그리드 박스 1번</div>
+        <div class="grid-item">그리드 박스 2번</div>
+        <div class="grid-item">그리드 박스 3번</div>
+        <div class="grid-item">그리드 박스 4번</div>
+        <div class="grid-item">그리드 박스 5번</div>
+    </div>
+    
+</body>
+</html>

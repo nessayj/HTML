@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 예제에 나온것처럼 3x3이 아니라 flex */
+        * {
+            margin: 0;
+        }
+        body {
+            background-color: #eee;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 300px);
+            gap: 1rem; /* column과 row gap을 같이 주는 것 */
+        }
+        .card-view {
+            background-color: white;
+            box-shadow: 1px 1px 5px black;
+            display: flex;
+            flex-direction: column;
+            height: 320px;
+            padding: 0 24px;
+        }
+        .card-item-header {
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .card-item-image {
+            background-size: cover; /* cover : 공백없이 다 채움 */
+            height: 60%;
+        }
+        .card-item-desc {
+            font-size: 0.8rem;
+            padding: 10px 0;
+        }
+        .image-no1 {
+            background-image: url(./images/cup-1.jpg);
+        }
+        .image-no2 {
+            background-image: url(./images/cup-2.jpg);
+        }
+        .image-no3 {
+            background-image: url(./images/cup-3.jpg);
+        }
+        .image-no4 {
+            background-image: url(./images/cup-4.jpg);
+        }
+        .image-no5 {
+            background-image: url(./images/cup-5.jpg);
+        }
+        .image-no6 {
+            background-image: url(./images/cup-6.jpg);
+        }
+        .image-no7 {
+            background-image: url(./images/cup-7.jpg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- card-view라는 api가 있음; 여기서는 단지 class이름 -->
+    <div id="container">
+        <div class="card-view">
+            <div class="card-item-header">사진 제목</div>
+            <div class="card-item-image image-no1"></div>
+            <div class="card-item-desc">사진설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</div>
+        </div>
+        <div class="card-view">
+            <div class="card-item-header">사진 제목</div>
+            <div class="card-item-image image-no2"></div>
+            <div class="card-item-desc">사진설명 : Lorem ipsum dolor sit amet,
+                 consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</div>
+        </div>
+        <div class="card-view">
+            <div class="card-item-header">사진 제목</div>
+            <div class="card-item-image image-no3"></div>
+            <div class="card-item-desc">사진설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</div>
+        </div>
+        <div class="card-view">
+            <div class="card-item-header">사진 제목</div>
+            <div class="card-item-image image-no4"></div>
+            <div class="card-item-desc">사진설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</div>
+        </div>
+        <div class="card-view">
+            <div class="card-item-header">사진 제목</div>
+            <div class="card-item-image image-no5"></div>
+            <div class="card-item-desc">사진설명 : Lorem ipsum dolor sit amet,
+                 consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</div>
+        </div>
+        <div class="card-view">
+            <div class="card-item-header">사진 제목</div>
+            <div class="card-item-image image-no6"></div>
+            <div class="card-item-desc">사진설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</div>
+        </div>
+        <div class="card-view">
+            <div class="card-item-header">사진 제목</div>
+            <div class="card-item-image image-no7"></div>
+            <div class="card-item-desc">사진설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</div>
+        </div>
+    </div>
+</body>
+</html>

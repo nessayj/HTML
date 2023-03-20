@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>갤러리만들기</title>
+    <style>
+        #container {
+            background-color: rgb(182, 168, 168);
+            width: 700px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: 
+                "cup1 cup2 cup3"
+                "cup4 cup5 cup6"
+                "cup7 cup8 .";
+            row-gap: 2px;
+            column-gap: 2px;
+        }
+        .cup {
+            background-color: white;
+            border: 1px solid black;
+            font-size: 10px;
+        }
+        .cup img {
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+            height: 100px;
+           
+        }
+        .cup h2 {
+            margin: 5px;
+            margin-top: 10px;
+        }
+        .cup p {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="cup cup1">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-1.jpg" alt="컵1">
+            <p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</p>
+        </div>
+        <div class="cup cup2">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-2.jpg" alt="컵2">
+            <p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</p>
+        </div>
+        <div class="cup cup3">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-3.jpg" alt="컵3">
+            <p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</p>
+        </div>
+        <div class="cup cup4">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-4.jpg" alt="컵4">
+            <p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</p>
+        </div>
+        <div class="cup cup5">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-5.jpg" alt="컵5">
+            <p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</p>
+        </div>
+        <div class="cup cup6">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-6.jpg" alt="컵6">
+            <p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</p>
+        </div>
+        <div class="cup cup7">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-7.jpg" alt="컵7">
+            <p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</p>
+        </div>
+        <div class="cup cup8">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-1.jpg" alt="컵8">
+            <p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipsicing elit. Ullam, numquam. Neque mollitia esse blanditiis fecere.</p>
+        </div>
+    </div>
+</body>
+</html>

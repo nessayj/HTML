@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .grid-container {
+            /* 뒤 쪽 마진 주는 법: width: calc(100vw - 공백을 주고싶은 크기만큼) */
+            width: calc(100vw-40px);
+            margin: 10px;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            grid-template-areas: 
+                "header header header"
+                "sidebar content content"
+                "footer footer footer";
+            row-gap: 2px;
+            column-gap: 2px;
+        }
+        .grid-item {
+            color: white;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .grid-item:nth-child(2n) {
+            background-color: blueviolet;
+        }
+        #header {
+            grid-area: header;
+            background-color: purple;
+        }
+        #sideber {
+            grid-area: sidebar;
+        }
+        #content {
+            grid-area: content;
+        }
+        #footer {
+            grid-area: footer;
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div id="header" class="grid-item">Header 영역</div>
+        <div id="sidebar" class="grid-item">sidebar 영역</div>
+        <div id="content" class="grid-item">content 영역</div>
+        <div id="footer" class="grid-item">footer 영역</div>
+    </div>
+</body>
+</html>
