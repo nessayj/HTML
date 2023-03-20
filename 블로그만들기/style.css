@@ -1,0 +1,101 @@
+body {
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+.title {
+    color: purple;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    flex: 1;
+    text-shadow: 2px 2px pink;
+}
+input {
+    background-color: blueviolet;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+.search-button {
+    background-color: purple;
+    color: white;
+}
+.main-container {
+    display: flex;
+}
+.menu {
+    display: flex;
+    width: 200px;
+
+}
+
+nav ul {
+    list-style: none;
+}
+nav li a {
+    text-align: center;
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav li {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+nav li:hover {
+    background-color: pink;
+    border-radius: 20px;
+}
+
+nav li a:hover {
+    color: magenta;
+}
+.main {
+    flex: 1;
+    border: 3px solid rgb(92, 12, 102);
+    border-radius: 30px;
+    text-align: center;
+    background-image: url(./images/PngItem_784359.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .8;
+}
+
+
+.main p {
+    text-align: center;
+    color: magenta;
+    font-weight: bold;
+}
+aside {
+    position: right;
+    width: 200px;
+    text-align: center;
+    border: 3px solid rgb(92, 12, 102);
+    border-radius: 30px;
+}
+aside h2 {
+    text-align: center;
+    color: magenta;
+    font-weight: bold;
+    font-size: 24px;
+}
